@@ -2,21 +2,20 @@
     background-color: #e1e1e1;
     color: #5f5f5f;
     font-family: Arial, Helvetica, sans-serif;
-    font-size:0.95em;
+    font-size: 0.95em; /*I heard better to use "em" for font-size. But this is a pain in the ass*/
     line-height: 120%;
     width: 500px;
     margin: auto;
 }
 .paragraph {
-    white-space: pre-line; /*Without "white-space" I was unable to edit line-breaks. Should I just use <br>?*/
+   white-space: pre-line; /*Without "white-space" I was unable to edit line-breaks. Should I just use <br>?*/
 }
 .h1 {
     font-size: 2.2em;
-    text-align: center;
 }
 .h2 {
     font-size: 1.4em;
-    margin-bottom: 10px;
+    line-height: 150%;
     color: #5f5f5f;
 }
 .input:hover {
@@ -41,12 +40,15 @@
     background-color: #3498db;
     margin: auto;
     height: 200px;
-    }
-.intro__h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro__main-title {
     color: #ffffff;
 }
-.intro__h2 {
-    text-align: center;
+.intro__sub-title {
     color: #205478;
 }
 .intro__paragraph {
